@@ -1,0 +1,3 @@
+﻿  infixConverter.cpp
+C:\Users\danielhuynh\Documents\GitHub\CS303Assignment3-koifissh\CS303Assignment3\CS303Assignment3\infixConverter.cpp(65,7): warning C4101: 'currRow': unreferenced local variable
+  CS303Assignment3.vcxproj -> C:\Users\danielhuynh\Documents\GitHub\CS303Assignment3-koifissh\CS303Assignment3\x64\Debug\CS303Assignment3.exe
