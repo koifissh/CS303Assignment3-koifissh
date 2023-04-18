@@ -15,8 +15,8 @@ int main() {
 		cout << endl;
 		cout << "Select a number to perform the corresponding function" << endl;
 		cout << "1. Infix to Postfix" << endl
-			<< "2. Push_back - Enqueue" << endl
-			<< "3. Pop_front - Dequeue" << endl
+			<< "2. Enqueue" << endl
+			<< "3. Dequeue" << endl
 			<< "4. Peek Front Item" << endl
 			<< "5. Check if Empty" << endl
 			<< "6. Check Queue Size" << endl;

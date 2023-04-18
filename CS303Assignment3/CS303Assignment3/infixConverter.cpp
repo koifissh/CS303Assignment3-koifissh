@@ -17,7 +17,7 @@ int operatorCheck(char row)
 		return -1;
 };
 
-void orgCheck(string infixInput) {
+bool orgCheck(string infixInput) {
 	stack<char> brackets;
 	bool isBalanced = true;
 	char open[] = { '(' , '[' , '{' };
@@ -47,11 +47,12 @@ void orgCheck(string infixInput) {
 	
 	if (brackets.empty()) {
 		isBalanced = true;
+		return true;
 	}
 	else {
 		isBalanced = false;
-		cout << "There was an error" << endl;
-		exit(0);
+		cout << "There was an error - Invalid Expression" << endl;
+		return false;
 	}
 }
 
@@ -71,29 +72,12 @@ void inPostFix(string infixInput) {
 
 		if ((row >= 'a' && row <= 'z') || (row >= 'A' && row <= 'Z') || (row >= '0' && row <= '9')) {
 			output += row;
-			cout << output << endl;
+			//cout << output << endl;
 		}
 		
-		
-		/*else if (row == '(' || row == '{' || row == '[') {
-			balanced += 1;
-			currRow = row;
-			stack1.push(row);
-		}
-
-		else if (row == ')' || row == '}' || row == '[') {
-			if (currRow == !row) {
-				balanced += 1;
-				while (stack1.top() != '(') {
-					output += stack1.top();
-					stack1.pop();
-				}
-				stack1.pop();
-			}
-		}*/
 
 		else {
-			orgCheck(infixInput);
+			//orgCheck(infixInput);
 			while (!stack1.empty() && operatorCheck(infixInput[i]) <= operatorCheck(stack1.top())) {
 				output += stack1.top();
 				stack1.pop();
@@ -108,7 +92,7 @@ void inPostFix(string infixInput) {
 		output += stack1.top();
 		stack1.pop();
 	}
-	
-	cout << output << endl;
-	
+	if (orgCheck(infixInput) == true) {
+		cout << output << endl;
+	}
 };
