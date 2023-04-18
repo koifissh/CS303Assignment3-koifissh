@@ -1,3 +1,6 @@
-﻿  infixConverter.cpp
+﻿  Source.cpp
+  infixConverter.cpp
 C:\Users\danielhuynh\Documents\GitHub\CS303Assignment3-koifissh\CS303Assignment3\CS303Assignment3\infixConverter.cpp(66,7): warning C4101: 'currRow': unreferenced local variable
+  Generating Code...
+C:\Users\danielhuynh\Documents\GitHub\CS303Assignment3-koifissh\CS303Assignment3\CS303Assignment3\queue.h(77): warning C4715: 'Queue<std::basic_string<char,std::char_traits<char>,std::allocator<char> > >::peek': not all control paths return a value
   CS303Assignment3.vcxproj -> C:\Users\danielhuynh\Documents\GitHub\CS303Assignment3-koifissh\CS303Assignment3\x64\Debug\CS303Assignment3.exe

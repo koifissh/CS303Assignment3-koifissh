@@ -18,7 +18,7 @@ int main() {
 			<< "2. Enqueue" << endl
 			<< "3. Dequeue" << endl
 			<< "4. Peek Front Item" << endl
-			<< "5. Check if Empty" << endl
+			<< "5. Check if Empty (0-false, 1-true)" << endl
 			<< "6. Check Queue Size" << endl;
 		
 		cin >> userChoice;
