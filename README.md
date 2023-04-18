@@ -11,5 +11,5 @@ To use this program you can:
 - "2. Enqueue"
 - "3. Dequeue"
 - "4. Peek Front Item"
-- "5. Check if Empty (0-false, 1-true"
+- "5. Check if Empty (0-false, 1-true)"
 - "6. Check Queue Size"
